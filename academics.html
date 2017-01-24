@@ -1,0 +1,385 @@
+<!Doctype HTML>
+<!-- https://validator.w3.org-->
+<!-- author @nishchith-->
+<!-- SYNTAX HIGHLIGHTING CREDITS : https://tohtml.com/c/-->
+
+<html lang="en">
+
+<head>
+  <title> @FCP </title>
+  <!-- all meta -->
+  <meta charset="utf-8"/>
+  <meta name="description" content="This is for educational purpose only ."/>
+  <meta name="keywords" content="programming , c programs , c language, edgerank"/>
+  <meta name="robots" content="noindex,nofollow"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="500, initial-scale=1">
+
+  <!-- link section here after deploying remove link add W3.css-->
+  <link rel="icon" href="asserts/favi.ico"/>
+  <!--w3 lib and icons-->
+  <link rel="stylesheet" href="w3.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css"/>
+  <!--added fonts mainly google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet"><!-- used at Heading -->
+</head>
+
+<body class="body">
+  <!-- header class-->
+  <!--change heading fonts--->
+  <h1 style="font-family: 'Orbitron', sans-serif;"><center>Fuck FCP</center></h1>
+  <header class="w3-content w3-row-padding w3-panel" style="width:100% ">
+  <ul class=" w3-card-8 w3-navbar w3-dark-grey w3-large w3-round-large">
+    <li ><a href="index.html" class=" w3-hover-black w3-hover-text-green w3-left w3-padding-xlarge w3-leftbar w3-border-green"><i class="fa fa-home"></i> Home </a></li>
+    </li ><a href="programs.html" class="w3-hover-black w3-hover-text-green w3-left w3-padding-xlarge w3-leftbar w3-border-green"><i class="fa fa-file"></i> Programs </a></li>
+    <li><a href="contribute.html" class=" w3-hover-black w3-hover-text-green w3-left w3-padding-xlarge w3-leftbar w3-border-green"><i class="fa fa-users"></i> Contributors </a></li>
+    <li ><a href="terms.html" class=" w3-hover-black w3-hover-text-green w3-left w3-padding-xlarge w3-leftbar w3-border-green"><i class="fa fa-warning"></i> Terms </a></li>
+  </ul>
+</header>
+<div class="w3-panel w3-leftbar w3-border-black w3-content w3-container w3-light-grey w3-round-large">
+  <p> Click for solutions . Note: Text Formatting is yet to be worked on , Zoom in/out for complete visibility. </p>
+</div>
+<!-- much to do with text allignment fonts etc -->
+<!-- add faqs and normal introduction-->
+<!-- -->
+<div class=" w3-card-4 w3-content w3-padding-16 w3-center w3-panel w3-large w3-container w3-hover-shadow w3-round-large" style="width:100%">
+    <h2><b>Content</b></h2>
+    <!--Question description- mock added-->
+    <!-- Simple Interest And Compound interest -->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('SC').style.display='block'">To calculate Simple Interest and Compound Interest .</button>
+      <div id="SC" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+        <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+        <!-- hints / concepy -->
+        <p> [Hint : Use math.h for power() ] </p>
+        <!-- Solution Here -->
+        <pre class="w3-left-align w3-card-4 w3-round-large" style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdio.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>conioh</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>math.h</span><span style='color:#800000; '>></span>
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+<span style='color:#800000; font-weight:bold; '>int</span> p<span style='color:#808030; '>,</span>n<span style='color:#808030; '>,</span>r<span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>float</span> si<span style='color:#808030; '>,</span>ci<span style='color:#800080; '>;</span>
+clrscr<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Enter Principal Amount</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>p<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Enter Time</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>n<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Enter Rate of interest</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>r<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+si<span style='color:#808030; '>=</span>p<span style='color:#808030; '>*</span>n<span style='color:#808030; '>*</span>r<span style='color:#808030; '>/</span><span style='color:#008000; '>100.0</span><span style='color:#800080; '>;</span>
+ci<span style='color:#808030; '>=</span>p<span style='color:#808030; '>*</span><span style='color:#808030; '>(</span><span style='color:#603000; '>pow</span><span style='color:#808030; '>(</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>+</span>r<span style='color:#808030; '>/</span><span style='color:#008c00; '>100</span><span style='color:#808030; '>,</span>n<span style='color:#808030; '>)</span><span style='color:#808030; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Simple interest </span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '> </span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>si <span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Compound interest </span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '> </span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>ci <span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+getch<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+
+      </div>
+      <br><br>
+    <!--.Accept a point P and check if its inside/outside/on the circle . -->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('circle').style.display='block'">To accept a point P and check whether the point is inside , outside or on the circle.</button>
+        <div id="circle" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+          <!-- hints and concept-->
+          <p> [Hint :] </p>
+          <!--solution here-->
+
+        </div>
+        <br><br>
+    <!--No. of days in a month -->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('month').style.display='block'">To find Number of days in a month in any year including leap year.</button>
+        <div id="month" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+            <p> [Hint : Switch Case . Note : OverFlow] </p>
+            <!--solution here-->
+            <pre class="w3-left-align w3-round-large w3-card-4"style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdio.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>conio.h</span><span style='color:#800000; '>></span>
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+<span style='color:#800000; font-weight:bold; '>int</span> year <span style='color:#808030; '>,</span>month<span style='color:#800080; '>;</span>
+clrscr<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Enter year</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>year<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Enter Month </span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>month<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>switch</span><span style='color:#808030; '>(</span>month<span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>1</span><span style='color:#e34adc; '>:</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>3</span><span style='color:#e34adc; '>:</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>5</span><span style='color:#e34adc; '>:</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>7</span><span style='color:#e34adc; '>:</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>9</span><span style='color:#e34adc; '>:</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>11</span><span style='color:#e34adc; '>:</span>
+  <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>31 Days</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+  <span style='color:#800000; font-weight:bold; '>break</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>4</span><span style='color:#e34adc; '>:</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>6</span><span style='color:#e34adc; '>:</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>8</span><span style='color:#e34adc; '>:</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>10</span><span style='color:#e34adc; '>:</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>12</span><span style='color:#e34adc; '>:</span>
+  <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>30 Days</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+  <span style='color:#800000; font-weight:bold; '>break</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>case </span><span style='color:#008c00; '>2</span><span style='color:#e34adc; '>:</span>
+  <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>year<span style='color:#808030; '>%</span><span style='color:#008c00; '>4</span><span style='color:#808030; '>)</span>
+    <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>28 Days</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+   <span style='color:#800000; font-weight:bold; '>else</span>
+    <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>29 Days</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+   <span style='color:#800000; font-weight:bold; '>break</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+<span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+getch<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+        </div>
+        <br><br>
+    <!-- Sum And Reverse-->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('SR').style.display='block'">To Find Sum and Reverse of a given number with error checking .</button>
+        <div id="SR" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+            <p> [Hint : Use of % operator ] </p>
+            <!--solution here-->
+            <pre class="w3-card-4 w3-left-align w3-round-large"style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdio.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>conio.h</span><span style='color:#800000; '>></span>
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+<span style='color:#800000; font-weight:bold; '>int</span> n <span style='color:#808030; '>,</span> rev<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#808030; '>,</span>s<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+clrscr<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Enter a number :</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>n<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>while</span><span style='color:#808030; '>(</span>n<span style='color:#808030; '>></span><span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+rev<span style='color:#808030; '>=</span> rev<span style='color:#808030; '>*</span><span style='color:#008c00; '>10</span><span style='color:#808030; '>+</span>n<span style='color:#808030; '>%</span><span style='color:#008c00; '>10</span><span style='color:#800080; '>;</span>
+s<span style='color:#808030; '>=</span>s<span style='color:#808030; '>+</span>n<span style='color:#808030; '>%</span><span style='color:#008c00; '>10</span><span style='color:#800080; '>;</span>
+n<span style='color:#808030; '>/</span><span style='color:#808030; '>=</span><span style='color:#008c00; '>10</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Sum of Digits=</span><span style='color:#007997; '>%d</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>s<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Reverse =</span><span style='color:#007997; '>%d</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>rev<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+getch<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+
+        </div>
+        <br><br>
+    <!-- Pattern print -->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('pat').style.display='block'">To accept number of lines(n) from the user and display the required pattern on the screen. Debug the same using Turbo C++ IDE features.</button>
+        <div id="pat" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+              <p> [Hint :] </p>
+            <!--solution here-->
+        </div>
+      <br><br>
+    <!--To Find Factorial of a number using function .-->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('fact').style.display='block'">To Find Factorial of a number using function.</button>
+        <div id="fact" class="w3-content w3-card-4 w3-panel w3-round-large w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+              <p> [Hint : Function &amp Loops ] </p>
+            <!--solution here-->
+    <pre class="w3-left-align w3-card-4 w3-round-large" style='color:#000000;background:#ffffff;'><span style='color:#696969; '>//iterative</span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdio.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>conio.h</span><span style='color:#800000; '>></span>
+
+<span style='color:#696969; '>//prototype declaration</span>
+<span style='color:#800000; font-weight:bold; '>int</span> factorial<span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+
+<span style='color:#800000; font-weight:bold; '>int</span> factorial<span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span> n<span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+<span style='color:#800000; font-weight:bold; '>int</span> product<span style='color:#808030; '>=</span><span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>while</span><span style='color:#808030; '>(</span>n<span style='color:#808030; '>></span><span style='color:#008c00; '>1</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+  product<span style='color:#808030; '>*</span><span style='color:#808030; '>=</span>n<span style='color:#800080; '>;</span>
+   n<span style='color:#808030; '>-</span><span style='color:#808030; '>-</span> <span style='color:#800080; '>;</span>
+ <span style='color:#800080; '>}</span>
+<span style='color:#800000; font-weight:bold; '>return</span> product<span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+<span style='color:#800000; font-weight:bold; '>int</span> number <span style='color:#808030; '>,</span>result<span style='color:#800080; '>;</span>
+clrscr<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Enter a number :</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>number<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+result<span style='color:#808030; '>=</span>factorial<span style='color:#808030; '>(</span>number<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Factorial </span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '>=</span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>number<span style='color:#808030; '>,</span>result<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+getch<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+      </div>
+      <br><br>
+
+    <!-- To Find GCD using recursion .-->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('gcd').style.display='block'">To Find GCD using recursion .</button>
+        <div id="gcd" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+            <p> [Hint: Read about Factorial Recursion before starting this .] </p>
+            <!--solution here-->
+            <pre class="w3-left-align w3-card-4 w3-round-large" style='color:#000000;background:#eeeeee;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdio.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>conio.h</span><span style='color:#800000; '>></span>
+<span style='color:#696969; '>//prototype declaration (Turbo C++)</span>
+<span style='color:#800000; font-weight:bold; '>int</span> gcd<span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span><span style='color:#808030; '>,</span><span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>int</span> gcd<span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span> n1 <span style='color:#808030; '>,</span> <span style='color:#800000; font-weight:bold; '>int</span> n2<span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+    <span style='color:#800000; font-weight:bold; '>if</span> <span style='color:#808030; '>(</span>n2<span style='color:#808030; '>!</span><span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+        <span style='color:#800000; font-weight:bold; '>return</span> gcd<span style='color:#808030; '>(</span>n2<span style='color:#808030; '>,</span>n1<span style='color:#808030; '>%</span>n2<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    <span style='color:#800080; '>}</span>
+    <span style='color:#800000; font-weight:bold; '>else</span> <span style='color:#800000; font-weight:bold; '>return</span> n1<span style='color:#800080; '>;</span>
+    <span style='color:#800080; '>}</span>
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+    <span style='color:#800000; font-weight:bold; '>int</span> a <span style='color:#808030; '>,</span>b <span style='color:#800080; '>;</span>
+    clrscr<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Enter 2 numbers</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    <span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span> <span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>a<span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>b<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>GCD = </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>gcd<span style='color:#808030; '>(</span>a<span style='color:#808030; '>,</span>b<span style='color:#808030; '>)</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    <span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+    getch<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+        </div>
+      <br><br>
+    <!-- To store n elements in an array and search for occurences of a key element in it .-->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('ser').style.display='block'">To store n elements in an array and search for occurences of a key element in it . </button>
+        <div id="ser" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+              <p> [Hint: One Dimensional Array Linear Search ] </p>
+            <!--solution here-->
+            <pre class="w3-left-align w3-round-large w3-card-4" style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdio.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>conio.h</span><span style='color:#800000; '>></span>
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+<span style='color:#800000; font-weight:bold; '>int</span> n <span style='color:#800080; '>;</span>
+clrscr<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>No. Of Elemenst </span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>n<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>int</span> arr<span style='color:#808030; '>[</span>n<span style='color:#808030; '>]</span><span style='color:#808030; '>,</span>i <span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Enter elements</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span>i<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>i<span style='color:#808030; '>&lt;</span>n<span style='color:#800080; '>;</span>i<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span>
+  <span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>arr<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>int</span> key <span style='color:#808030; '>,</span> flag<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Key to be Searched for </span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>key<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span>i<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>i<span style='color:#808030; '>&lt;</span>n<span style='color:#800080; '>;</span>i<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#808030; '>)</span>
+  <span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>arr<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span>key<span style='color:#808030; '>)</span>
+      flag<span style='color:#808030; '>+</span><span style='color:#808030; '>+</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>flag<span style='color:#808030; '>)</span>
+  <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '> Found</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>flag<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>else</span>
+  <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Not Found</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+getch<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+        </div>
+      <br><br>
+    <!-- To Find transpose of a Matrix [ Concept : Two-Dimensional Array] -->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('tran').style.display='block'">To Find transpose of a Matrix [ Concept : Two-Dimensional Array ]. </button>
+        <div id="tran" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+              <p> [Hint : Nested For Loops] </p>
+            <!--solution here-->
+            <pre class="w3-left-align w3-round-large w3-card-4" style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>conio.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include </span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdio.h</span><span style='color:#800000; '>></span>
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+
+<span style='color:#800000; font-weight:bold; '>int</span> m<span style='color:#808030; '>,</span> n <span style='color:#800080; '>;</span>
+clrscr<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+ <span style='color:#696969; '>//take in no. of rows and columns</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Rows and Columns:</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    <span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span> <span style='color:#808030; '>&amp;</span>m<span style='color:#808030; '>,</span> <span style='color:#808030; '>&amp;</span>n<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>int</span> transpose<span style='color:#808030; '>[</span>n<span style='color:#808030; '>]</span><span style='color:#808030; '>[</span>m<span style='color:#808030; '>]</span><span style='color:#808030; '>,</span> omatrix<span style='color:#808030; '>[</span>m<span style='color:#808030; '>]</span><span style='color:#808030; '>[</span>n<span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>int</span> i <span style='color:#808030; '>,</span>j <span style='color:#800080; '>;</span>
+
+<span style='color:#800000; font-weight:bold; '>for</span> <span style='color:#808030; '>(</span>i <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span> i <span style='color:#808030; '>&lt;</span> m<span style='color:#800080; '>;</span> <span style='color:#808030; '>+</span><span style='color:#808030; '>+</span>i<span style='color:#808030; '>)</span>
+   <span style='color:#800000; font-weight:bold; '>for</span> <span style='color:#808030; '>(</span>j <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span> j <span style='color:#808030; '>&lt;</span> n<span style='color:#800080; '>;</span> <span style='color:#808030; '>+</span><span style='color:#808030; '>+</span>j<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+         <span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span> <span style='color:#808030; '>&amp;</span>omatrix<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+         <span style='color:#696969; '>//making it transpose</span>
+         transpose<span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span><span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> omatrix<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
+  <span style='color:#800080; '>}</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Original matrix :</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span>i<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>i<span style='color:#808030; '>&lt;</span>m<span style='color:#800080; '>;</span><span style='color:#808030; '>+</span><span style='color:#808030; '>+</span>i<span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+   <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span>j<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>j<span style='color:#808030; '>&lt;</span>n<span style='color:#800080; '>;</span><span style='color:#808030; '>+</span><span style='color:#808030; '>+</span>j<span style='color:#808030; '>)</span>
+         <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '> </span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>omatrix<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+   <span style='color:#800080; '>}</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Transpose matrix :</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span>i<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>i<span style='color:#808030; '>&lt;</span>n<span style='color:#800080; '>;</span><span style='color:#808030; '>+</span><span style='color:#808030; '>+</span>i<span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+   <span style='color:#800000; font-weight:bold; '>for</span><span style='color:#808030; '>(</span>j<span style='color:#808030; '>=</span><span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>j<span style='color:#808030; '>&lt;</span>m<span style='color:#800080; '>;</span><span style='color:#808030; '>+</span><span style='color:#808030; '>+</span>j<span style='color:#808030; '>)</span>
+       <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '> </span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>transpose<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+   <span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0f69ff; '>\n</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+  <span style='color:#800080; '>}</span>
+<span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+getch<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+        </div>
+      <br><br>
+    <!--Program to Create a structure 'cmplx' which stores a complex number using two float values( r & i) . Write a program to perform basic arithematic operations( +  - /  * ) on two complex numbers . Create seperate functions to add , subtract , multiply , divide and display  .-->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('comp').style.display='block'"> Program to Create a structure 'cmplx' which stores a complex number using two float values( r and i) . Write a program to perform basic arithematic operations on two complex numbers . Create seperate functions to add , subtract , multiply , divide and display  .</button>
+        <div id="comp" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+              <p> [Hint :] </p>
+            <!--solution here-->
+        </div>
+      <br><br>
+    <!--Write a program to swap two numbers using pointers and function swap  .-->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('Sw').style.display='block'">Write a program to Swap two numbers using pointers and function swap  .</button>
+        <div id="Sw" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+              <p> [Hint : Pointers &amp Pointer Arithematic ] </p>
+            <!--solution here-->
+            <pre class="w3-left-align w3-round-large w3-card-4" style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>stdio.h</span><span style='color:#800000; '>></span>
+<span style='color:#004a43; '>#</span><span style='color:#004a43; '>include</span><span style='color:#800000; '>&lt;</span><span style='color:#40015a; '>conio.h</span><span style='color:#800000; '>></span>
+<span style='color:#696969; '>//prototype declaration</span>
+<span style='color:#800000; font-weight:bold; '>int</span> swap<span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span><span style='color:#808030; '>,</span><span style='color:#800000; font-weight:bold; '>int</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>int</span> swap<span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#808030; '>*</span>a <span style='color:#808030; '>,</span> <span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#808030; '>*</span>b<span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+<span style='color:#800000; font-weight:bold; '>int</span> temp<span style='color:#800080; '>;</span>
+temp<span style='color:#808030; '>=</span><span style='color:#808030; '>*</span>a<span style='color:#800080; '>;</span>
+<span style='color:#808030; '>*</span>a<span style='color:#808030; '>=</span><span style='color:#808030; '>*</span>b<span style='color:#800080; '>;</span>
+<span style='color:#808030; '>*</span>b<span style='color:#808030; '>=</span>temp<span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+<span style='color:#800000; font-weight:bold; '>int</span> <span style='color:#400000; '>main</span><span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+<span style='color:#800000; font-weight:bold; '>int</span> num1<span style='color:#808030; '>,</span>num2 <span style='color:#800080; '>;</span>
+clrscr<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Enter two number</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>scanf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '> </span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>num1<span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>num2<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>After swapping </span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+swap<span style='color:#808030; '>(</span><span style='color:#808030; '>&amp;</span>num1<span style='color:#808030; '>,</span><span style='color:#808030; '>&amp;</span>num2<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#603000; '>printf</span><span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Num1=</span><span style='color:#007997; '>%d</span><span style='color:#0000e6; '> Num2=</span><span style='color:#007997; '>%d</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>num1<span style='color:#808030; '>,</span>num2<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
+getch<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+        </div>
+      <br><br>
+    <!--Write a program to count Total number of words in the File.[ Concept : File-Handling ]-->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('fh').style.display='block'"> Write a program to count Total number of words in the File.[ Concept : File-Handling ]</button>
+        <div id="fh" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+              <p> [Hint :] </p>
+            <!--solution here-->
+        </div>
+      <br><br>
+    <!--Write a program to use primitive graphics functions .-->
+    <button class="w3-round-large w3-black w3-hover-green w3-hover-shadow " onclick="document.getElementById('gr').style.display='block'">Write a program to use primitive graphics functions .</button>
+        <div id="gr" class="w3-content w3-card-4 w3-panel w3-green w3-round-large" style="display:none">
+          <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
+            <!-- hints and concept-->
+              <p> [Hint :] </p>
+            <!--solution here-->
+        </div>
+      <br>
+</div>
+<!--yet to footer class-->
+<footer class="w3-content w3-row-padding w3-card-8 w3-navbar w3-dark-grey w3-large w3-round-large" style="width:100% ">
+  <center><h6> Powered by <a href="#" class="w3-text-black">@W3.css</a></h6> <p>Contribute <a class="w3-text-black" href="http://www.github.com/inishchith" target="_blank">@github </a></p></center>
+</footer>
+
+</body>
+</html>
